@@ -547,7 +547,7 @@ let duration = skill.duration;
 
 </div>
 
-       <div className="mt-8 bg-white rounded-xl shadow-lg p-6">
+      <div className="mt-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
 
 <button
   onClick={() => {
@@ -620,9 +620,9 @@ let duration = skill.duration;
     タイムライン
   </h2>
 
-  <h3 className="font-semibold mb-2 text-gray-700 dark:text-gray-200">
-    発動タイミング
-  </h3>
+ <h3 className="font-semibold mb-2 text-black dark:text-white">
+  発動タイミング
+</h3>
 
  <div className="overflow-x-auto border rounded-lg">
 
@@ -631,7 +631,7 @@ let duration = skill.duration;
     {Array.from({ length: 25 }).map((_, i) => (
       <div
         key={i}
-        className="w-[75px] text-center text-xs border-r py-2 text-gray-700 dark:text-gray-200"
+        className="w-[75px] text-center text-sm font-semibold border-r border-gray-300 py-2 text-black dark:text-white"
       >
         {i * 5}s
       </div>
