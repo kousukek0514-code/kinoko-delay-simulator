@@ -299,14 +299,14 @@ let duration = skill.duration;
   .sort((a,b)=>a.time-b.time);
 
   return (
-    <main className="min-h-screen bg-gray-100 p-6">
+    <main className="min-h-screen bg-gray-100 dark:bg-gray-900 p-6">
       <div className="max-w-6xl mx-auto">
 
-        <h1 className="text-4xl font-bold text-center mb-8">
+        <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
           🍄 キノコ伝説 技能遅延シミュレーター β0.1 🍄
         </h1>
 
-       <div className="bg-white rounded-xl shadow-lg p-6 space-y-5">
+       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 space-y-5">
 
   <BuildForm
     buildName={buildName}

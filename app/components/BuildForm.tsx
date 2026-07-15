@@ -39,13 +39,13 @@ export default function BuildForm({
           placeholder="例：PvP最強"
           value={buildName}
           onChange={(e) => setBuildName(e.target.value)}
-          className="w-full rounded-lg border p-2"
+          className="w-full rounded-lg border border-gray-300 bg-white p-2 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
         />
       </div>
 
       {/* 職業 */}
       <div>
-        <label className="block font-semibold mb-2">
+        <label className="block font-semibold text-gray-800 dark:text-gray-200 mb-2">
           職業
         </label>
 
