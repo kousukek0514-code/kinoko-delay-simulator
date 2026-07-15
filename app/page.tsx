@@ -616,30 +616,30 @@ let duration = skill.duration;
 </div>
 
 )}
-  <h2 className="text-2xl font-bold mb-4">
+  <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
     タイムライン
   </h2>
 
-  <h3 className="font-semibold mb-2">
+  <h3 className="font-semibold mb-2 text-gray-700 dark:text-gray-200">
     発動タイミング
   </h3>
 
-  <div className="overflow-x-auto border rounded-lg">
+ <div className="overflow-x-auto border rounded-lg">
 
-    {/* 秒数 */}
-    <div className="flex w-[2000px] border-b">
-      {Array.from({ length: 25 }).map((_, i) => (
-        <div
-          key={i}
-          className="w-[75px] text-center text-xs border-r py-2"
-        >
-          {i * 5}s
-        </div>
-      ))}
-    </div>
+  {/* 秒数 */}
+  <div className="flex w-[2000px] border-b">
+    {Array.from({ length: 25 }).map((_, i) => (
+      <div
+        key={i}
+        className="w-[75px] text-center text-xs border-r py-2 text-gray-700 dark:text-gray-200"
+      >
+        {i * 5}s
+      </div>
+    ))}
+  </div>
 
-    {/* タイムライン本体 */}
-    <div className="w-[2000px] min-h-[380px] bg-gray-50 relative">
+  {/* タイムライン本体 */}
+  <div className="w-[2000px] min-h-[380px] bg-gray-50 dark:bg-gray-900 relative">
 
   {timeline.map((event, index) => (
     <button
