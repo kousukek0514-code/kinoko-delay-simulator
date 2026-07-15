@@ -70,12 +70,14 @@ export default function BuildForm({
         <label className="block font-semibold mb-2">
           職業技能
         </label>
-
-        <select
-          value={selectedJobSkill?.id ?? ""}
-          disabled
-          className="w-full rounded-lg border bg-gray-100 p-2"
-        >
+<select
+  value={selectedJobSkill?.id ?? ""}
+  disabled
+  className="w-full rounded-lg border border-gray-300 bg-gray-100 p-2 text-gray-900
+             dark:border-gray-600 dark:bg-gray-700 dark:text-white
+             disabled:opacity-100 disabled:text-gray-900
+             dark:disabled:text-white"
+>
           {jobSkills
             .filter(
               (skill) =>
